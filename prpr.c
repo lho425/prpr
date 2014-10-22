@@ -159,6 +159,7 @@ int main(int argc, char* argv[]){
   printf("TODO: SIGPIPE\n");
   printf("TODO: -e\n");//redirect stderr
   printf("TODO: -v\n");//verbose mode
+  printf("TODO: -p prefork_num\n");
   printf("TODO: IP address of client\n");
   printf("TODO: strtol test\n");
   printf("TODO: win32 port\n");
