@@ -1,7 +1,7 @@
 prpr
 ====
 
-pretty proxy - a generic purpose proxy -
+pretty proxy - a generic purpose proxy server -
 
 [ja]
 
