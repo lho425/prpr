@@ -143,7 +143,6 @@ int main(int argc, char* argv[]){
   SOCKET sock_connection;
   enum SOCKET_TYPE sock_type;
 
-  printf("TODO: fork-exec\n");
   printf("TODO: SIGINT\n");
   printf("TODO: SIGPIPE\n");
   printf("TODO: -e\n");//redirect stderr
