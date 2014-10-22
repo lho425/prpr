@@ -61,11 +61,15 @@ static int spawn_child_process(SOCKET sock_connection, char * const args[]){
   int r;
   r = fork();
   if(r == -1){
+    perror("prpr: fork() failed ");
+    return -1;
+    /*
     while(r == -1){
-      perror("prpr: fork() failed :");
+      perror("prpr: fork() failed ");
+      sleep(1);
       fprintf(stderr, "prpr: retry fork()\n");
       r = fork();
-    }
+      }*/
   }
   
   if(r == 0){
@@ -132,6 +136,14 @@ static int parse_options(int argc, char** argv){
 
 }//func
 
+static SOCKET sock_close_when_finish;
+static void close_when_finish(SOCKET sock){
+  sock_close_when_finish = sock;
+}
+static void finish(){
+  close(sock_close_when_finish);
+}
+  
 
 int main(int argc, char* argv[]){
 
