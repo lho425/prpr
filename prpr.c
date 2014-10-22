@@ -146,6 +146,7 @@ int main(int argc, char* argv[]){
   printf("TODO: SIGINT\n");
   printf("TODO: SIGPIPE\n");
   printf("TODO: -e\n");//redirect stderr
+  printf("TODO: -v\n");//verbose mode
   printf("TODO: IP address of client\n");
   printf("TODO: strtol test\n");
   printf("TODO: win32 port\n");
